@@ -1,4 +1,6 @@
-# Boilerplate Next.js 14
+# Modified shadcn/ui Drawer
+
+I made a change to the behavior of the drawer with the context API. I needed a mobile menu, and by default, there is no component with this functionality, so I adapted the styles, based on the Drawer direction.
 
 ## Technologies used
 
@@ -6,39 +8,51 @@
 - [Tailwind CSS](https://tailwindcss.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [shadcn/ui](https://ui.shadcn.com/)
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [EditorConfig]()
 
-## VSCode Extensions
+## How to use
 
-For their linters and plugins to work, install their respective extensions. Below are the official extension links:
+To use it, you can follow the step-by-step instructions in the shadcn/ui documentation and install the Drawer component.
 
-Download - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+After configuration and installation, simply copy the file in ./src/components/ui/drawer.tsx to the same directory in your project.
 
-Download - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+## Clone the project
 
-## Creating new project
-
-To create a new project using this template, use the command below:
+Run the following command to clone the repository:
 
 ```bash
-npx create-next-app@latest --example https://github.com/gildembergleite/boirlerplate-next14-typescript-shadcn
+git clone https://github.com/gildembergleite/nextjs-dont-blow-money.git
 ```
 
-## VSCode Settings
+Open the directory in the terminal:
 
-In the root of the project, inside the .vscode folder, you will find the file with the linter settings.
-
-See the project settings below:
-
-```json
-{
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "cSpell.words": ["autodocs", "nextjs"],
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": true
-  }
-}
+```bash
+cd nextjs-dont-blow-money
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Now, start the application:
+
+```bash
+npm run dev
+```
+
+To use the project, access the following address in your browser:
+
+http://localhost:3000
+
+## Contributions
+
+Contributions are welcome. To contribute, follow these steps:
+
+Fork the repository.
+Make your changes and test them.
+Submit a pull request.
+
+## License
+
+The project is licensed under the MIT License.
